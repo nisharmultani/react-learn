@@ -23,7 +23,7 @@
 
 <!-- Create div inside div html DOM with react -->
 <script>
-     const card = React.createElement("div",{id:"parent"}, React.createElement("div",{id:"child"}, React.createElement("h2",{},"hello this is from react")))
+     const card = React.createElement("div",{id:"parent"}, React.createElement("div",{id:"child"},[ React.createElement("h2",{},"hello this is h2 from react"),React.createElement("h1",{},"hello this is h1 from react") ]))
      console.log("card",card)
       const root = ReactDOM.createRoot(document.getElementById("root"))
       console.log("root",root)
